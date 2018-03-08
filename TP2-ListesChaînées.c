@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : TP2-ListesChaînées.c
+ Name        : TP2-ListesChaÃ®nÃ©es.c
  Author      : Groupe Ti106
  Version     :
  Copyright   : CC
@@ -35,6 +35,8 @@ int avant(ficheptr fiche1, ficheptr fiche2) {
 }
 void repertoireVide(repertoire lerepertoire) {
 }
+void rechercheTel(char *nom){
+}
 void choix1() {
 	printf("\nChoix1");
 }
@@ -48,7 +50,7 @@ void menu(repertoire lerepertoire) {
 	int choix;
 	do {
 		printf(
-				"=============================Gestion de répertoire=============================\n");
+				"=============================Gestion de rÃ©pertoire=============================\n");
 		printf("\t\t1- choix1\n");
 		printf("\t\t2- choix2\n");
 		printf("\t\t3- choix3\n");
@@ -71,7 +73,7 @@ void menu(repertoire lerepertoire) {
 			printf("Au revoir");
 			break;
 		default:
-			printf("Choix doit être dans [1,4]!");
+			printf("Choix doit Ãªtre dans [1,4]!");
 			break;
 		}
 	} while (choix != 4);
