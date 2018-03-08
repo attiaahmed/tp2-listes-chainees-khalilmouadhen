@@ -7,23 +7,23 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/* Définition d'une fiche du répertoire */
+/* DÃ©finition d'une fiche du rÃ©pertoire */
 typedef struct {
 	char nom[21];
 	char prenom[21];
 	char tel[9];
 } fiche, *ficheptr;
 
-/* Définition d'un onglet */
-typedef struct {
+/* DÃ©finition d'un onglet */
+typedef struct onglett{
 	ficheptr lafiche;
-	ongletptr suivante;
+	struct onglett *suivante;
 } onglet, *ongletptr;
 
-/* Définition du répertoire */
+/* DÃ©finition du rÃ©pertoire */
 typedef ongletptr repertoire[26];
 
-/* Déclaration des fonctions à définir */
+/* DÃ©claration des fonctions Ã  dÃ©finir */
 void afficheRepertoire(repertoire lerepertoire);
 void afficheOnglet(ongletptr longlet);
 void afficheFiche(ficheptr lafiche);
