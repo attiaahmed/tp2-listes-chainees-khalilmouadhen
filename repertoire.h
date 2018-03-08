@@ -34,3 +34,4 @@ int avant(ficheptr fiche1, ficheptr fiche2);
 void repertoireVide(repertoire lerepertoire);
 void menu(repertoire lerepertoire);
 void freeRepertoire(repertoire lerepertoire);
+void rechercheTel(char *nom);
