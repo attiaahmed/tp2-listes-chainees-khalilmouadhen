@@ -2,7 +2,7 @@
  * repertoire.c
  *
  *  Created on: 9 mars 2018
- *      Author: dell
+ *      Author: Hmida HMIDA
  */
 #include<stdio.h>
 #include<stdlib.h>
@@ -28,7 +28,7 @@ void afficheFiche(ficheptr lafiche) {
 	if (lafiche == NULL) {
 		printf("\nFiche vide!");
 	} else {
-		printf("\nNom: %s, Prénom: %s, Téléphone: %s", lafiche->nom,
+		printf("\nNom: %s, PrÃ©nom: %s, TÃ©lÃ©phone: %s", lafiche->nom,
 				lafiche->prenom, lafiche->tel);
 	}
 }
@@ -51,11 +51,11 @@ void menu(repertoire lerepertoire) {
 	int choix;
 	do {
 		printf(
-				"\n================================Gestion de Répertoire================================");
+				"\n================================Gestion de RÃ©pertoire================================");
 		printf(
-				"\n=     1- Saisie du répertoire                                                       =");
+				"\n=     1- Saisie du rÃ©pertoire                                                       =");
 		printf(
-				"\n=     2- Affichage du répertoire                                                    =");
+				"\n=     2- Affichage du rÃ©pertoire                                                    =");
 		printf(
 				"\n=     3- Ajout d'une fiche                                                          =");
 		printf(
@@ -83,7 +83,7 @@ void menu(repertoire lerepertoire) {
 			choix5();
 			break;
 		default:
-			printf("\nVérifier que le choix est dans [1,5]!");
+			printf("\nVÃ©rifier que le choix est dans [1,5]!");
 		}
 	} while (choix != 5);
 }
