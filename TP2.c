@@ -1,10 +1,10 @@
 /*
  ============================================================================
- Name        : TP2.c
- Author      : Groupe Ti106
+ Name        : Groupe Ti106
+ Author      : Hmida HMIDA
  Version     :
  Copyright   : CC
- Description : Hello World in C, Ansi-style
+ Description : Gestion de répertoire téléphonique
  ============================================================================
  */
 
