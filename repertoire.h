@@ -29,7 +29,7 @@ void afficheOnglet(ongletptr longlet);
 void afficheFiche(ficheptr lafiche);
 void ajouterFiche(repertoire lerepertoire, ficheptr lafiche);
 void majuscule(ficheptr lafiche);
-void ajouterDansOnglet(ongletptr longlet, ficheptr lafiche);
+void ajouterDansOnglet(ongletptr *longlet, ficheptr lafiche);
 int avant(ficheptr fiche1, ficheptr fiche2);
 void repertoireVide(repertoire lerepertoire);
 void menu(repertoire lerepertoire);
