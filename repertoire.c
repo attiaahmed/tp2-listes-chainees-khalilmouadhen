@@ -33,55 +33,8 @@ void afficheFiche(ficheptr lafiche) {
 	}
 }
 void ajouterFiche(repertoire lerepertoire, ficheptr lafiche) {
-    fiche fch;
-    int test,i,j;
-    do{
-    test=0;
-    i=0;
-    printf("\nDonner votre Nom: ");
-    scanf(" %s",&fch.nom[21]);
-    while(test==0 && i!=25)
-    {
-        if (fch.nom[0]=='A'+i || fch.nom[0]=='a'+i)
-            test=1;
-        else
-            i++;
-    }
-    }while (test!=1);
-    do{
-    test=0;
-    i=0;
-    printf("\nDonner votre Prénom: ");
-    scanf(" %s",&fch.prenom[21] || fch.prenom[0]=='a'+i);
-    while(test==0 && i!=25)
-    {
-        if (fch.prenom[0]=='A'+i)
-            test=1;
-        else
-            i++;
-    }
-    }while (test!=1);
-
-    do{
-    test=0;
-    i=0;
-    printf("\nDonner votre tel: ");
-    scanf("%s",&fch.tel[9]);
-    for (j=0;j<9;j++)
-    {
-    while(test==0 && i!=25)
-    {
-        if (fch.tel[0]==i)
-            test=1;
-        else
-            i++;
-    }
-    }
-    if (fch.tel[9]!='\0')
-        test=0;
-    }while (test!=1);
-
-    ajouterDansOnglet(fch.prenom[0],fch);
+    
+    
 
 }
 void majuscule(ficheptr lafiche) {
