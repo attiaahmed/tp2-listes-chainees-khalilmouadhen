@@ -44,17 +44,9 @@ for (i=0;i<25;i++)
     if (lafiche.nom[0]=='A'+i)
     x=1;
 }
-if (x==0);
-lafiche.nom[0]-=24;
-else
-    x=0;
-for (i=0;i<25;i++)
-{
-    if (lafiche.prenom[0]=='A'+i)
-    x=1;
-}
-if (x==0);
-lafiche.prenom[0]-=24;
+
+
+
 }
 void ajouterDansOnglet(ongletptr longlet, ficheptr lafiche) {
 int i,test=0;
