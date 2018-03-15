@@ -33,55 +33,8 @@ void afficheFiche(ficheptr lafiche) {
 	}
 }
 void ajouterFiche(repertoire lerepertoire, ficheptr lafiche) {
-    fiche fch;
-    int test,i,j;
-    do{
-    test=0;
-    i=0;
-    printf("\nDonner votre Nom: ");
-    scanf(" %s",&fch.nom[21]);
-    while(test==0 && i!=25)
-    {
-        if (fch.nom[0]=='A'+i || fch.nom[0]=='a'+i)
-            test=1;
-        else
-            i++;
-    }
-    }while (test!=1);
-    do{
-    test=0;
-    i=0;
-    printf("\nDonner votre Prénom: ");
-    scanf(" %s",&fch.prenom[21] || fch.prenom[0]=='a'+i);
-    while(test==0 && i!=25)
-    {
-        if (fch.prenom[0]=='A'+i)
-            test=1;
-        else
-            i++;
-    }
-    }while (test!=1);
-
-    do{
-    test=0;
-    i=0;
-    printf("\nDonner votre tel: ");
-    scanf("%s",&fch.tel[9]);
-    for (j=0;j<9;j++)
-    {
-    while(test==0 && i!=25)
-    {
-        if (fch.tel[0]==i)
-            test=1;
-        else
-            i++;
-    }
-    }
-    if (fch.tel[9]!='\0')
-        test=0;
-    }while (test!=1);
-
-    ajouterDansOnglet(fch.prenom[0],fch);
+   
+     
 
 }
 void majuscule(ficheptr lafiche) {
@@ -103,27 +56,8 @@ for (i=0;i<25;i++)
 if (x==0);
 lafiche.prenom[0]-=24;
 }
+
 void ajouterDansOnglet(ongletptr longlet, ficheptr lafiche) {
-int i,test=0;
-onglet fich1;
-while ('A'+i!=longlet)
-{
-    i++;
-}
-
-while (longlet[i].suivante!=NULL && test==0)
-{
-    if (longlet[i].lafiche.nom<lafiche.nom)
-        longlet[i].lafiche=longlet[i].suivante;
-    else
-    {
-    test=1;
-    fich1.lafiche=lafiche;
-    fich1.suivante=longlet[i].suivante;
-    longlet[i].lafiche=&fich1;
-    }
-
-}
 
 }
 int avant(ficheptr fiche1, ficheptr fiche2) {
